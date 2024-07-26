@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+  /* background-color: #f0f0f0;  */
+  /* color: #333; Default  */
+ 
+}
+
+/* Basic styling for the header */
+.main-header {
+  background-color: #111827;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-text {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo-text span {
+  color: #ffd000;
+  font-weight:bold;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin-right: 1.5rem; /* Adjusted margin for smaller screens */
+  font-size: 16px; /* Adjusted font size for smaller screens */
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+select{
+    border-radius: 5px;
+    outline: none;
+ 
+}
+.nav-menu ul li a {
+  color: #fff;
+  margin: 10px;
+  font-family: 'poppins';
+  font-weight: 500px;
+  /* padding-bottom: 20px; */
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+.nav-menu ul li a:hover {
+  color: #ffd000; /* Hover color */
+}
+
+.signup-btn button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ffd000;
+  color: #3d424a;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth zoom effect */
+}
+.signup-btn button:hover {
+  background-color: #f3c702;
+  transform: scale(1.1); /* Scale up the button */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: #ffffff;
+}
+/* .hero-text {
+  max-width: 50%;
+} */
+.hero-text h2 {
+  font-family: 'poppins';
+  font-weight: bold;
+  color: #111827;
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-text .highlight {
+  font-size: 48px;
+  font-family: 'poppins';
+  font-weight: bold;
+  font-style: italic;
+  color: #ffd000;
+}
+
+.hero-text p {
+  color: #111827;
+  /* font-weight: 6px; */
+  font-family: 'poppins';
+  font-size: 20px;
+  margin: 25px 0;
+}
+
+.hero-image {
+  max-width: 50%;
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.learn-more-btn button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ffd000;
+  color: #3d424a;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth zoom effect */
+}
+
+.learn-more-btn button:hover {
+  background-color: #f3c702;
+  transform: scale(1.1); /* Scale up the button */
+}
+
+/* Optional: Style the anchor tag within the button */
+.learn-more-btn button a {
+  color: inherit; /* Ensure the text color matches the button */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }}
+
+  .nav-menu ul {
+    margin-top: 1rem; /* Add spacing between nav and logo */
+  }
+
+  .nav-menu ul li {
+    margin-right: 1rem; /* Reduce margin for smaller screens */
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .signup-btn button {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Further reduce font size */
+  }
+
+  .hero p {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+
+  .testimonials-section {
+    width: 100%; /* Adjusted to full width */
+    max-width: 1300px; /* Maintain maximum width */
+    margin: 0 auto; /* Center the section */
+    padding: 40px 0;
+    background-color: #111827;
+    min-height: 300px; /* Ensure the section has an average size */
+  }
+  
+  .testimonials-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonial-item {
+    display: none;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .testimonial-item.active {
+    display: block; /* Ensure the active testimonial is visible */
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  
+  .section-heading .client {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .section-heading .testimonials {
+    color: #f3c702;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+  }
+  
+  .testimonial-text {
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-author {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+    /* Optional: Add styling for responsiveness */
+    @media (max-width: 768px) {
+        .testimonial-text {
+            font-size: 1em;
+        }
+
+        .section-heading {
+            font-size: 1.5em;
+        }
+    }
+
+
+ 
+  
+    body {
+      font-family: 'poppins';
+      margin: 0;
+      padding: 0;
+      background-color: #ffd000;
+  }
+  
+  .blog-section {
+      padding: 40px;
+      background-color:#ffd000;
+      text-align: center;
+  }
+  
+  .section-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.highlight {
+    color: #111827; /* Change this to your desired color */
+    font-family: 'poppins'; /* Change this to your desired font */
+    font-style: italic;
+    font-weight: bold;
+}
+
+  .section-title {
+    font-weight: bold;
+      font-size: 48px;
+      margin-bottom: 30px;
+      color: white;
+  }
+  
+  .blog-post {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white; /* Yellow background color */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-image {
+      width: 50%;
+      object-fit: cover;
+  }
+  
+  .blog-content {
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .author-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  .author-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      align-items: center;
+      /* padding-left: 4px; */
+      
+      /* margin-right: 40px; */
+      margin-left: 70px;
+      margin-bottom: 8px;
+  }
+  
+  .author-name {
+    padding-left: 12px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    font-weight: 500;
+      font-size: 17px;
+      color: #333;
+  }
+  
+  .blog-title {
+      /* margin: 0; */
+      padding-left: 15px;
+      /* padding-bottom: 40px; */
+      font-size: 1.8em;
+      color: #333;
+  }
+  
+  .blog-description {
+    padding-top: 20px;
+    padding: left 15px;
+      /* margin: 10px 0; */
+      color: #666;
+  }
+  /* Basic Reset and Styling */
+/* Basic Reset and Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+}
+
+.footer {
+  background-color: #111827; /* Dark background */
+  color: #FFFFFF; /* White text */
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 35px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding-left: 15px;
+  /* font-weight: bold; */
+}
+
+.footer-section h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.footer-section .studio {
+  color: #f3c702; /* Custom color for 'Studio' */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding-left: 15px ;
+  list-style: none;
+}
+
+.footer-section a {
+  color: #fffd00; /* Custom color for links */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  /* padding-left: 15px; */
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+}

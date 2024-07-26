@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: #f0f0f0; 
+  color: #333;
+ 
+}
+
+/* Basic styling for the header */
+.main-header {
+  background-color: #111827;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-text {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo-text span {
+  color: #ffd000;
+  font-weight:bold;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin-right: 1.5rem; /* Adjusted margin for smaller screens */
+  font-size: 16px; /* Adjusted font size for smaller screens */
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+select{
+    border-radius: 5px;
+    outline: none;
+ 
+}
+.nav-menu ul li a {
+  color: #fff;
+  margin: 10px;
+  font-family: 'poppins';
+  font-weight: 500px;
+  /* padding-bottom: 20px; */
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+.nav-menu ul li a:hover {
+  color: #ffd000; /* Hover color */
+}
+
+.signup-btn button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ffd000;
+  color: #3d424a;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth zoom effect */
+}
+.signup-btn button:hover {
+  background-color: #f3c702;
+  transform: scale(1.1); /* Scale up the button */
+}
+
+
+
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right:50px ;
+  padding-bottom: 50px;
+}
+
+.blog-post {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 40%;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+    width: 60%;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-size: 1em;
+    color: #333;
+}
+
+.blog-title {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.blog-description {
+    margin: 10px 0;
+    color: #666;
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
